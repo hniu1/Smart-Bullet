@@ -1,5 +1,8 @@
 # Smart-Bullet
-A Cloud-Assisted Bullet Screen Filter based on Deep Learning.
+A Cloud-Assisted Bullet Screen Filter based on Deep Learning. 3 parts were included:
+* [Data preprocessing](https://github.com/hniu1/Smart-Bullet/tree/master/data_preprocessing)
+* [CNN model train](https://github.com/hniu1/Smart-Bullet/tree/master/cnn_train)
+* [Smart Danmu Google Chrome extension](https://github.com/hniu1/Smart-Bullet/tree/master/GExtension_server)
 
 # Data Preprocessing
 ## Data crawl
