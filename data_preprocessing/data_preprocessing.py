@@ -11,9 +11,6 @@ import numpy as np
 import pandas as pd
 import random
 import argparse
-import operator
-import re
-import json
 import sklearn.preprocessing
 import jieba
 
