@@ -118,14 +118,6 @@ def merge_data(data):
     return data
 
 def parse_recipes(input_data):
-  # Example entry:
-  #"title": "Tweet New RSS Feed Item",
-  #"description": "Automatically tweet new RSS feed items.",
-  #"action_channel": "TwitterV2API",
-  #"event_channel": "RSSAPI",
-  #"action": "tweet",
-  #"event": "new_feed",
-  #"rule": "{u'message': u'{{title}}: {{link}}'}"
     recipes = []
     for item in input_data:
         if item["Upcount"] == None:
@@ -181,21 +173,11 @@ def parse_bullet(input_data_positive, input_data_negative):
 
 def data_load():
     parser = argparse.ArgumentParser()
-    # parser.add_argument('--output_train', required=True, help='path of output.')
-    # parser.add_argument('--output_dev', required=True, help='path of output.')
-    # parser.add_argument('--output_test', required=True, help='path of output.')
-    # parser.add_argument('--level', required=True, help='the number of levels, only 5 or 10.')
     parser.add_argument('--data_size', help='the number of data.')
     parser.add_argument('--dataset', required=True, help='path of data.')
-    # parser.add_argument('--output_data', help='path of output.')
-    # parser.add_argument('--input_data', help='input data need parse')
     parser.add_argument('--upcount_num', required=True,
                         help='select positive data if upcount >= this num, if will generate two df')
     parser.add_argument('--num_negative_select', help='the num of selected negative data')
-    # parser.add_argument('--input_negative_words', help='the path of negative words')
-    # parser.add_argument('--output_data_positive', help='the path of positive output data')
-    # parser.add_argument('--output_data_negative', help='the path of negative output data')
-
     args = parser.parse_args()
 
     # read data from path
