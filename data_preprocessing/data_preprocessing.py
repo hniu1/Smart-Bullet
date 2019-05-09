@@ -274,7 +274,7 @@ def data_label(positive_data, negative_data):
     positiveString = ""
     positive_words_list = [item['recipe'] for item in positive_data][:len(negative_data)]
 
-    x = open('finalTest/danmaku/positive', 'w')
+    x = open('positive', 'w')
     for item in positive_words_list:
         temp_string = join_string(item)
         positiveString += temp_string.strip() + "\n"
@@ -290,7 +290,7 @@ def data_label(positive_data, negative_data):
     negativeString = ""
     negative_words_list = [item['recipe'] for item in negative_data]
 
-    y = open('finalTest/danmaku/negative', 'w')
+    y = open('negative', 'w')
     for item in negative_words_list:
         temp_string = join_string(item)
         negativeString += temp_string.strip() + "\n"
@@ -308,18 +308,6 @@ def main():
     data_p, data_n = parse_bullet(input_data_positive, input_data_negative)
 
     data_label(data_p, data_n)
-
-
-    # jsObj_p = json.dumps(data_p, indent=4, separators=(',', ':'))
-    # jsObj_n = json.dumps(data_n, indent=4, separators=(',', ':'))
-    #
-    # fileObject = open('finalTest/positive.json', 'w')
-    # fileObject.write(jsObj_p)
-    # fileObject.close()
-    #
-    # fileObject = open('finalTest/negative.json', 'w')
-    # fileObject.write(jsObj_n)
-    # fileObject.close()
 
     return
 
