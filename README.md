@@ -16,5 +16,6 @@ In the following we list some important arguments in```data_preprocessing.py```:
 cd data_preprocessing
 python data_preprocessing.py --dataset dataset/bulletData.csv --upcount_num 100 --num_negative_select 100000
 ```
-The output will be two files (positive, negative).
+The output will be two files (positive, negative) in data_preprocessing dir.
 
+# Model train
