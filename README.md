@@ -1,5 +1,5 @@
 # Smart-Bullet
-A Cloud-Assisted Bullet Screen Filter based on Deep Learning
+A Cloud-Assisted Bullet Screen Filter based on Deep Learning.
 
 # Data Preprocessing
 ## Data crawl
@@ -19,3 +19,11 @@ python data_preprocessing.py --dataset dataset/bulletData.csv --upcount_num 100 
 The output will be two files (positive, negative) in data_preprocessing dir.
 
 # Model train
+Use the processed data to train the cnn model:
+```
+cd cnn_train
+python train.py
+```
+Model will be saved in cnn_train/runs dir.
+
+#Google Chrome extension and server build
