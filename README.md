@@ -26,4 +26,4 @@ python train.py
 ```
 Model will be saved in cnn_train/runs dir.
 
-#Google Chrome extension and server build
+# Google Chrome extension and server build
