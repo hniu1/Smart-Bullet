@@ -27,6 +27,6 @@ Use the processed data to train the cnn model:
 cd cnn_train
 python train.py
 ```
-Model will be saved in *cnn_train/runs/checkpoints* dir.
+Model will be saved in **cnn_train/runs/checkpoints** dir.
 
 # Google Chrome extension and server build
