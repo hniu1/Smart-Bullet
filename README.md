@@ -30,3 +30,15 @@ python train.py
 Model will be saved in **cnn_train/runs/checkpoints** dir.
 
 # Google Chrome extension and server build
+
+# Citation
+
+If you use the code in this repo, please cite the following paper:
+'''
+@article{niu2019smartbullets,
+  title={SmartBullets: A Cloud-Assisted Bullet Screen Filter based on Deep Learning},
+  author={Niu, Haoran and Li, Jiangnan and Zhao, Yu},
+  journal={arXiv preprint arXiv:1905.05925},
+  year={2019}
+}
+'''
