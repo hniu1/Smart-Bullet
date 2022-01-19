@@ -31,7 +31,7 @@ Model will be saved in **cnn_train/runs/checkpoints** dir.
 
 # Google Chrome extension and server build
 
-# Citation
+<!-- # Citation
 
 If you use the code in this repo, please cite the following paper:
 ```
@@ -41,4 +41,4 @@ If you use the code in this repo, please cite the following paper:
   journal={arXiv preprint arXiv:1905.05925},
   year={2019}
 }
-```
+``` -->
